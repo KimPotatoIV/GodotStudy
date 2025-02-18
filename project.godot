@@ -1,0 +1,8 @@
+config_version=5
+
+[application]
+
+config/name="Godot Study"
+run/main_scene="res://scenes/01_if/01_if.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+config/icon="res://icon.svg"
