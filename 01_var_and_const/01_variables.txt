@@ -1,0 +1,30 @@
+1. GDScript란?
+	ㄴ 고도 엔진(Godot Engine) 전용 (스크립트) 언어
+	ㄴ 파이썬(Python)과 문법이 비슷하며, (Godot의 노드 시스템과 깊게 통합되어 있어) 게임 제작에 최적
+
+2. 변수(var)와 상수(const)
+	2-1. 변수(var)란?
+		ㄴ 내용물이 변할 수 있는 (데이터를 담는) 상자
+		ㄴ var 키워드 사용
+		ㄴ 자유롭게 읽거나 바꿀 수 있음
+		ㄴ ex) var player_name = "KimPotatoIV"
+	
+	2-2. 변수명 작성 추천 규칙
+		ㄴ snake_case: 단어는 소문자 + 띄어쓰기는 _로 구분
+		ㄴ ex) player_name, current_health, is_left
+	
+	2-3 상수(const)란?
+		ㄴ 한번 내용물을 담으면 내용물을 바꿀 수 없는 (데이터를 담는) 상자
+		ㄴ const 키워드 사용
+		ㄴ 값이 바뀌지 않음
+		ㄴ ex) const PLAYER_NAME = "KimPotatoIV"
+	
+	2-4. 상수명 작성 추천 규칙
+		ㄴ UPPER_SNAKE_CASE: 단어는 대문자 + 띄어쓰기는 _로 구분
+		ㄴ ex) MAX_HEALTH, PLAYER_TYPE
+	
+	2-5. 상수를 사용하지 않고 변수만 사용하면 안 되나?
+		ㄴ 변수만 사용해도 됨
+		ㄴ 다만, 값이 변하면 안 되거나 의미를 명확히 하고 싶으면
+			상수를 사용하는 것을 추천
+		ㄴ 코드가 복잡해졌을 때 직관적으로 혹은 강제적으로 오류를 줄일 수 있음
