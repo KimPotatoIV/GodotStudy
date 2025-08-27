@@ -1,0 +1,37 @@
+1. 기본 데이터 타입
+	ㄴ GDScript에서 자주 사용하는 데이터 타입은 숫자, 문자열, 불리언, 벡터, 배열, 딕셔너리가 있음
+
+2. 숫자(Number)
+	2-1. 정수(Integer, int)
+		ㄴ 소수점 없는 숫자를 저장하는 타입
+		ㄴ ex) var score: int = 10
+	
+	2-2. 실수(Float)
+		ㄴ 소수점이 있는 숫자를 저장하는 타입
+		ㄴ 0.0 혹은 1.0도 정수가 아닌 실수
+		ㄴ ex) const GRAVITY: float = 9.8
+
+3. 문자열(String)
+	ㄴ 글자를 저장하는 타입
+	ㄴ 큰따옴표(")또는 작은따옴표(') 사용 가능
+	ㄴ ex) var player_name: String = "KimPotatoIV"
+	ㄴ ex) var message: String = 'Hello, Godot!'
+
+4. 불리언(Boolean)
+	ㄴ 참(True) 또는 거짓(False)을 저장하는 타입
+	ㄴ ex) var is_alive: bool = true
+
+5. 벡터(Vector2, Vector3)
+	ㄴ 2D(Vector2), 3D(Vector3) 좌표를 저장하는 타입
+	ㄴ 위치, 방향, 속도 등을 표현할 때 사용
+
+6. 배열(Array)
+	ㄴ 여러 데이터를 순서대로 저장하는 타입
+	ㄴ 인덱스로 접근 가능
+	ㄴ ex) var fruits: Array = ["apple", "banana", "orange"]
+	ㄴ ex) print(fruits[0]) -> # apple이 출력됨
+
+7. 딕셔너리(Dictionary)
+	ㄴ 키(Key)와 값(Value) 데이터를 쌍으로 저장하는 타입
+	ㄴ ex) player: Dictionary = { "name": "Alice", "health": 100, "mana": 50 }
+	ㄴ ex) print(player["name"]) -> # Alice가 출력됨
