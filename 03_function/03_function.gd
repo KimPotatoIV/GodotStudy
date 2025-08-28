@@ -21,8 +21,8 @@ extends Node
 		실행할 코드
 """
 
-var number_a: int = 1
-var number_b: int = 2
+var number_a: int = 2
+var number_b: int = 3
 
 '''
 	_ready 함수는 현재 노드 및 자식 노드들이
@@ -31,11 +31,15 @@ var number_b: int = 2
 '''
 func _ready() -> void:
 	subscribe()
-	print(calculate_sum())
+	print("calculate_sum_1_result: ", calculate_sum_1())
+	print("calculate_sum_2_result: ", calculate_sum_2(number_a, number_b))
 
 # print 함수는 텍스트나 변수 값을 Output 콘솔(출력창)에 표시하는 함수
 func subscribe() -> void:
-	print("KimPotatoIV")
+	print("subscribe: KimPotatoIV")
 
-func calculate_sum() -> int:
+func calculate_sum_1() -> int:
 	return number_a + number_b
+
+func calculate_sum_2(value_a: int, value_b: int) -> int:
+	return value_a * value_b
