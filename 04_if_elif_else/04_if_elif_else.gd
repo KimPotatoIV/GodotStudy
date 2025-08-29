@@ -38,7 +38,7 @@ extends Node2D
 	<  		|		작다				|	8 < 9			|	true
 	>=  		|		크거나 같다		|	8 >= 8			|	true
 	<=  		|		작거나 같다		|	8 <= 10			|	true
-	and  	|		모두 참			|	true and false	|	false
+	and  	|		모두 참이면 참		|	true and false	|	false
 	or  		|		하나라도 참이면 참	|	true or false	|	true
 	not  	|		반대 값			|	not true			|	false
 '''
