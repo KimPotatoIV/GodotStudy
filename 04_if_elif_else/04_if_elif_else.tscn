@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8gsdlnfy2s"]
+
+[ext_resource type="Script" uid="uid://cyt2tio5cy7lj" path="res://04_if_elif_else/04_if_elif_else.gd" id="1_1utdj"]
+
+[node name="04_if_elif_else" type="Node2D"]
+script = ExtResource("1_1utdj")

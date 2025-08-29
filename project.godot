@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Godot Study"
-run/main_scene="uid://cug2rnpuseur"
+run/main_scene="uid://c8gsdlnfy2s"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
