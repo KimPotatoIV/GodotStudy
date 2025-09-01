@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bcc7rv3gki1ud"]
+
+[ext_resource type="Script" uid="uid://vwbcqu8hi8jo" path="res://05_for/05_for.gd" id="1_dapru"]
+
+[node name="05_for" type="Node2D"]
+script = ExtResource("1_dapru")
