@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://t2nr4hv53mtx"]
+
+[ext_resource type="Script" uid="uid://yw4vlto7q5e7" path="res://06_while/06_while.gd" id="1_o3atv"]
+
+[node name="06_while" type="Node2D"]
+script = ExtResource("1_o3atv")
