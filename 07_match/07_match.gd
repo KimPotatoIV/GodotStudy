@@ -43,7 +43,7 @@ func _ready() -> void:
 			print("No match...")
 	
 	print("======패턴 match 방식 사용======")
-	var value = [1, 2, 3]
+	var value: Array = [1, 2, 3]
 	match value:
 		[]:
 			print("The array is empty")
