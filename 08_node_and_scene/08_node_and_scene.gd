@@ -3,7 +3,8 @@ extends Node2D
 '''
 1. Node란?
 	ㄴ 고도 엔진에서 모든 요소(오브젝트, UI, 사운드 등)의 기본 단위
-	ㄴ Node는 자신만의 기능을 가짐 (예: Sprite2D, Label, AudioStreamPlayer)
+	ㄴ Node는 자신만의 기능을 가짐
+		ㄴ ex) Sprite2D, Label, AudioStreamPlayer
 	ㄴ Node는 씬 트리(Scene Tree) 구조로 부모-자식 관계를 가짐
 	ㄴ Node끼리 계층적으로 연결되어 Scene을 구성
 
