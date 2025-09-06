@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjk6mo2fxpjbm"]
+
+[ext_resource type="Script" uid="uid://bpd1kqqfqiw51" path="res://10_signal/10_signal.gd" id="1_n1cr1"]
+[ext_resource type="Script" uid="uid://bah4ocu5y7tys" path="res://10_signal/player.gd" id="2_cbv3w"]
+[ext_resource type="Script" uid="uid://bj0yvrw5rbm33" path="res://10_signal/monster.gd" id="3_g5ieg"]
+
+[node name="10_signal" type="Node2D"]
+script = ExtResource("1_n1cr1")
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource("2_cbv3w")
+
+[node name="Monster" type="Node2D" parent="."]
+script = ExtResource("3_g5ieg")
