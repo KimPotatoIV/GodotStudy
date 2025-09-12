@@ -7,4 +7,4 @@ script = ExtResource("1_kipg5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
