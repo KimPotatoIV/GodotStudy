@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bv1ls12dnuu6l"]
+
+[ext_resource type="Script" uid="uid://bc3n4jhisw4b6" path="res://16_timer_and_await/16_timer_and_await.gd" id="1_k7e8d"]
+
+[node name="16_timer_and_await" type="Node2D"]
+script = ExtResource("1_k7e8d")
