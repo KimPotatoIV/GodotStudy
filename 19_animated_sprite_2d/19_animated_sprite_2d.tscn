@@ -1,6 +1,80 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhbwixoxt7t4v"]
+[gd_scene load_steps=11 format=3 uid="uid://dhbwixoxt7t4v"]
 
 [ext_resource type="Script" uid="uid://lxsktggyaipe" path="res://19_animated_sprite_2d/19_animated_sprite_2d.gd" id="1_qnooh"]
+[ext_resource type="Texture2D" uid="uid://0fm6djp050k7" path="res://19_animated_sprite_2d/sprites/bunny_sheet.png" id="2_1fr7j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dawin"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sdawv"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cakt4"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjv0r"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1fr7j"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gl5vs"]
+atlas = ExtResource("2_1fr7j")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qnooh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dawin")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sdawv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cakt4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjv0r")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1fr7j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gl5vs")
+}],
+"loop": true,
+"name": &"tired",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gl5vs"]
+radius = 14.0
+height = 32.0
 
 [node name="19_animated_sprite_2d" type="Node2D"]
 script = ExtResource("1_qnooh")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(320, 176)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_qnooh")
+animation = &"tired"
+autoplay = "run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, 16)
+shape = SubResource("CapsuleShape2D_gl5vs")
