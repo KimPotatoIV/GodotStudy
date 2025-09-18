@@ -17,18 +17,18 @@ extends CanvasLayer
 		ㄴ UI를 구성하는 기본 노드로 모든 UI 노드는 Control을 상속
 		ㄴ 주요 속성
 			ㄴ Anchors Presets: 미리 정의된 앵커
-			ㄴ Anchors
-				ㄴ 자식 Control이 화면에서 어느 위치를 기준으로 움직일지 결정
-				ㄴ 값 범위: 0.0 ~ 1.0 (0: 부모 시작점, 1: 부모 끝점)
+				ㄴ Anchors
+					ㄴ 자식 Control이 화면에서 어느 위치를 기준으로 움직일지 결정
+					ㄴ 값 범위: 0.0 ~ 1.0 (0: 부모 시작점, 1: 부모 끝점)
 	
-	3-2. Container 노드
-		ㄴ 자식 Control 노드를 자동으로 배치
-		ㄴ 특징
-			ㄴ Container 자체는 위치와 크기를 조정
-			ㄴ 자식 노드는 Container 규칙에 따라 자동 배치
-		ㄴ 주요 속성
-			ㄴ Alignment		: 자식 배치 기준 (Begin / Center / End)
-			ㄴ Separation	: 자식 간 간격
+		ㄴ Container 노드(Control 노드의 자식 노드)
+			ㄴ 자식 Control 노드를 자동으로 배치
+			ㄴ 특징
+				ㄴ Container 자체는 위치와 크기를 조정
+				ㄴ 자식 노드는 Container 규칙에 따라 자동 배치
+			ㄴ 주요 속성
+				ㄴ Alignment		: 자식 배치 기준 (Begin / Center / End)
+				ㄴ Separation	: 자식 간 간격
 
 4. Control 노드와 Container 노드의 차이
 	==========================================================
