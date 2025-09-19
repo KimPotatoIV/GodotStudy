@@ -27,7 +27,7 @@ extends Node2D
 		ㄴ Audio -> Bus Layout에서 버스 추가 가능
 		ㄴ 아래 예제와 같이 코드로도 추가 가능
 		ㄴ AudioStreamPlayer의 bus 속성에 원하는 버스 이름 지정
-		ㄴ 볼륨 및 효과를 각각 한 번에 조절 가능
+		ㄴ bus를 기준으로 볼륨 및 효과를 각각 한 번에 조절 가능
 	
 	4-2. Audio 노드로 구분
 		ㄴ Audio 노드 여러 개 생성
