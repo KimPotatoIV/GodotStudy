@@ -73,3 +73,9 @@ func _process(delta: float) -> void:
 		bgm.stop()
 		sfx.stream = SFX_STREAM
 		sfx.play()
+	elif Input.is_action_just_pressed("ui_cancel"):
+		_mute_sfx_bus()
+
+func _mute_sfx_bus() -> void:
+	var sfx_bus_index = AudioServer.get_bus_index("SFX")
+	AudioServer.set_bus_mute(sfx_bus_index, true)
