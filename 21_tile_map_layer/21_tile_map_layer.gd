@@ -5,7 +5,7 @@ extends Node2D
 	ㄴ 실제 타일을 배치하는 노드
 	ㄴ 각 TileMapLayer는 타일 배치 외에 다음과 같은 기능을 따로 가질 수 있음
 		- 물리 레이어				(Physics Layers)
-		- 내이게이션 레이어			(Navigation Layers)
+		- 내비게이션 레이어			(Navigation Layers)
 		- 광원 차단 레이어			(Occlusion Layers)
 		- 사용자 지정 데이터 레이어	(Custom Data Layers)
 
