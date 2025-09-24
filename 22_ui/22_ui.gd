@@ -14,9 +14,10 @@ extends Node2D
 	2-2. Control 노드 계열
 		ㄴ UI 전용 노드
 		ㄴ 화면 비율과 해상도에 맞게 자동으로 배치되는 특징이 있음
+		ㄴ ex) Container, Button, Label 등
 
 3. Control 노드의 기본 속성
-	3-1. Anchor (앵커)
+	3-1. Anchor
 		ㄴ 부모 영역에서 자신의 기준점을 어디에 둘지 정하는 값
 		ㄴ 0.0 ~ 1.0 사이 값
 			ㄴ ex) (0,0) -> 부모의 좌상단
@@ -24,7 +25,7 @@ extends Node2D
 		ㄴ 해상도가 달라져도 UI가 무너지지 않게 만드는 핵심 속성
 
 	3-2. Anchors Preset
-		ㄴ 자주 쓰는 앵커 값을 버튼 하나로 빠르게 적용 가능
+		ㄴ 자주 쓰는 Anchor 값을 버튼 하나로 빠르게 적용 가능
 		ㄴ ex) Full Rect, Center, Top Left 등
 
 4. Container 노드
