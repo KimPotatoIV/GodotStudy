@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://siffplhngc0b"]
+
+[ext_resource type="Script" uid="uid://cod1gre0odoow" path="res://23_group/23_group.gd" id="1_f6qod"]
+[ext_resource type="Script" uid="uid://bdo5g2nei6d4a" path="res://23_group/enemy_0.gd" id="2_unpcv"]
+[ext_resource type="Script" uid="uid://cukxyrr41fxuh" path="res://23_group/enemy_1.gd" id="3_7pcwy"]
+[ext_resource type="Script" uid="uid://bpe4nduy1xou6" path="res://23_group/enemy_2.gd" id="4_6m1y0"]
+
+[node name="23_group" type="Node2D"]
+script = ExtResource("1_f6qod")
+
+[node name="Enemy0" type="Node2D" parent="."]
+script = ExtResource("2_unpcv")
+
+[node name="Enemy1" type="Node2D" parent="."]
+script = ExtResource("3_7pcwy")
+
+[node name="Enemy2" type="Node2D" parent="."]
+script = ExtResource("4_6m1y0")
